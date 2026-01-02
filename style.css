@@ -1,0 +1,374 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(2, 6, 23, 0.95);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a {
+  color: #cbd5f5;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  /*background: linear-gradient(135deg, #020617, #0f172a, #38bdf8);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-content {
+  animation: fadeUp 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ================= HERO LINKS ================= */
+.hero-links {
+  margin-top: 28px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.hero-links .linkedin {
+  background: linear-gradient(90deg, #0a66c2, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.hero-links .github,
+.hero-links .email,
+.hero-links .phone {
+  color: #e0f2fe;
+}
+
+.hero-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #e0f2fe;
+  transition: 0.3s ease;
+}
+
+.hero-links a:hover::after {
+  width: 100%;
+}
+
+.hero-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= HERO BUTTON ================= */
+.hero button {
+  margin-top: 40px;
+  padding: 14px 38px;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #38bdf8, #0a66c2);
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.4);
+}
+
+/* ================= ABOUT ================= */
+.about-fullscreen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 30px;
+  background: #ffffff;
+}
+
+.about-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.section-text {
+  font-size: 19px;
+  line-height: 1.9;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 30px;
+}
+
+.gray {
+  background: #f1f5f9;
+}
+
+/* ================= SKILLS ================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+}
+
+.skill-box h3 {
+  font-size: 20px;
+  color: #0284c7;
+  margin-bottom: 15px;
+}
+
+.skill-box ul {
+  list-style: none;
+}
+
+.skill-box li {
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+/* ================= EXPERIENCE & PROJECTS ================= */
+.experience-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  max-width: 760px;
+  margin: auto;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.company-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.company-name {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  padding-left: 18px;
+}
+
+.experience-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Project Tech */
+.project-tech {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+/* ================= REVEAL ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
+/* ================= HERO IMAGE ================= */
+.hero-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    animation: fadeUp 1.2s ease;
+}
+
+/* Responsive Image */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 130px;
+        height: 130px;
+    }
+}
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(2, 6, 23, 0.75),
+            rgba(15, 23, 42, 0.85)
+        ),
+        url("bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
