@@ -372,3 +372,120 @@ footer {
     text-align: center;
     color: white;
 }
+/* ================= GLOBAL RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  .experience-card {
+    max-width: 100%;
+  }
+}
+
+/* ================= TABLET & MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 120px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-links {
+    gap: 16px;
+  }
+
+  .hero button {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  /* ABOUT */
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .section-text {
+    font-size: 17px;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* EXPERIENCE & PROJECTS */
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* REMOVE HARD-CODED MARGINS */
+  #experience .section-title,
+  #projects .section-title {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
