@@ -505,3 +505,23 @@ footer {
 
 
 
+.underline-loop {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-loop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 3px;
+  background: #38bdf8;
+  animation: underlineLoop 10s ease-in-out infinite; /* Slower now */
+}
+
+@keyframes underlineLoop {
+  0%, 100% { width: 0; }
+  50% { width: 100%; }
+}
