@@ -518,10 +518,37 @@ footer {
   width: 0;
   height: 3px;
   background: #38bdf8;
-  animation: underlineLoop 10s ease-in-out infinite; /* Slower now */
+  animation: underlineLoop 10s ease-in-out infinite; 
 }
 
 @keyframes underlineLoop {
   0%, 100% { width: 0; }
   50% { width: 100%; }
+}
+
+.project-links {
+    margin-top: 18px;
+    text-align: center;   /* centers the button */
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    color: #1f2937;              /* dark gray */
+    border: 1px solid #d1d5db;   /* soft border */
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 
+        background-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.github-btn:hover {
+    background-color: #f9fafb;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
 }
