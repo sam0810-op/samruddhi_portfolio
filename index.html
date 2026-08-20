@@ -1,324 +1,1270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Samruddhi  Khandekar | Frontend Intern</title>
+    <title>Samruddhi S. Khandekar | Full Stack Developer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Header -->
+<!-- ================= NAVBAR ================= -->
+
 <header>
     <div class="nav-container">
-        <h1 class="logo">Samruddhi Samir Khandekar</h1>
+
+        <a href="#home" class="logo">
+            Samruddhi Samir Khandekar<span>.</span>
+        </a>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certifications</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </div>
 </header>
-<!-- Hero -->
+
+
+<!-- ================= HERO ================= -->
+
 <section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
 
-        <!-- Profile Image -->
-        <img src="profile.png" alt="Samruddhi Khandekar" class="hero-img">
-
-        <h2>Web Developer Intern</h2>
-        <h1>Samruddhi Khandekar</h1>
-        <p>Currently working at <strong>AthInnovations</strong></p>
-
-        <!-- Social Links -->
-        <div class="hero-links">
-            <a class="linkedin" href="https://www.linkedin.com/in/samruddhi-khandekar-66a19627b" target="_blank">LinkedIn</a>
-            <a class="github" href="https://github.com/sam0810-op" target="_blank">GitHub</a>
-            <a class="email" href="mailto:samukhandekar08@gmail.com">Email</a>
-            <a class="phone" href="tel:+919922126366">Phone</a>
+        <div class="profile-wrapper">
+            <img src="profile.png"
+                 alt="Samruddhi Khandekar"
+                 class="hero-img">
         </div>
 
-        <button onclick="scrollToSection('about')">Explore Profile</button>
-    </div>
-</section>
+        <p class="hero-small">HELLO, I'M</p>
 
+        <h1>
+            Samruddhi Khandekar
+        </h1>
 
+        <h2>
+            Full Stack Developer
+        </h2>
 
-<!-- About -->
-<section id="about" class="about-fullscreen reveal">
-    <div class="about-content">
-        <h2 class="section-title animate-title-loop underline-loop">About Me</h2>
-
-       <p class="section-text">
-  I am a final-year <strong>B.Tech Computer Science</strong> student and a <strong>passionate web developer</strong> 
-  with a strong interest in frontend development. I am currently working as a 
-  <strong>Developer Intern at AthInnovations</strong>, where I gain hands-on experience in building modern, 
-  responsive, and user-friendly web applications.
-</p>
-
-<p class="section-text">
-  I focus on creating clean and intuitive UI designs, writing maintainable and efficient code, and solving 
-  real-world problems through thoughtful implementation. I enjoy debugging, optimizing performance, and 
-  collaborating with team members to deliver high-quality solutions while continuously upgrading my technical 
-  skills to grow as a professional web developer.
-</p>
-
-    </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="section gray reveal">
-    <h2 class="section-title">Technical Skills</h2>
-
-    <div class="skills-grid">
-        <div class="skill-box">
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React.js</li>
-            </ul>
-        </div>
-
-        <div class="skill-box">
-            <h3>UI & Styling</h3>
-            <ul>
-                <li>Responsive Design</li>
-                <li>Flexbox & Grid</li>
-                <li>UI/UX Basics</li>
-                <li>Modern Layouts</li>
-            </ul>
-        </div>
-
-        <div class="skill-box">
-            <h3>Databases</h3>
-            <ul>
-                <li>SQL</li>
-                <li>MongoDB</li>
-            </ul>
-        </div>
-
-        <div class="skill-box">
-            <h3>Tools</h3>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-                <li>npm</li>
-                <li>Browser DevTools</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Experience -->
-<section id="experience" class="section reveal">
-  <h2 class="section-title" id="Experience" style="margin-left: 300px;">Internship Experience</h2>
-
-  <div class="experience-card">
-    <div class="experience-header">
-      <img src="ath.png" alt="AthInnovations Logo" class="company-logo">
-
-      <div>
-        <h3 class="role">Web Developer Intern</h3>
-        <p class="company-name"><strong> AthInnovations · Currently Working</strong></p>
-      </div>
-    </div>
-
-    <ul class="experience-list">
-      <li>Built responsive user interfaces using HTML, CSS, and JavaScript</li>
-      <li>Developed reusable and modular React components</li>
-      <li>Integrated frontend applications with backend APIs</li>
-      <li>Collaborated with team members on live projects</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Projects Built -->
-<section id="projects" class="section reveal" style="margin-top: -150px;">
-    <h2 class="section-title" style="margin-left: 400px;">Projects Built</h2>
-
-    <div class="experience-card">
-        <div class="experience-header">
-            <div>
-                <h3 class="role">HouseHaunt – House Rental Web Application</h3>
-                <p class="company-name">
-                    <strong>Full Stack Project</strong>
-                </p>
-            </div>
-        </div>
-
-        <ul class="experience-list">
-            <li>
-                Designed and developed <strong>HouseHaunt</strong>, a full-stack house rental web application
-                connecting property owners and renters.
-            </li>
-            <li>
-                Implemented secure authentication and role-based access for
-                <strong>Owner</strong> and <strong>Renter</strong> dashboards.
-            </li>
-            <li>
-                Built property listing features including add, edit, delete, view, and search functionality.
-            </li>
-            <li>
-                Integrated frontend with backend REST APIs for seamless data handling.
-            </li>
-            <li>
-                Designed responsive and user-friendly UI using modern frontend practices.
-            </li>
-            <li>
-                Ensured clean code structure, reusable components, and performance optimization.
-            </li>
-        </ul>
-
-        <p class="project-tech">
-            <strong>Tech Stack:</strong> HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB
+        <p class="hero-description">
+            B.Tech Computer Science graduate passionate about building
+            responsive, scalable and user-friendly web applications.
         </p>
 
-        <!-- GitHub Button -->
-    <div class="project-links">
-        <a href="https://github.com/sam0810-op/househaunt-app"
-           target="_blank"
-           class="github-btn">
-            View on GitHub
-        </a>
-    </div>
-</div>
-    </div>
+        <div class="hero-buttons">
 
-    <div class="experience-card" style="margin-top: 50px;">
-    <div class="experience-header">
-        <div>
-            <h3 class="role">Employee Management System</h3>
-            <p class="company-name">
-                <strong>Spring Boot Web Application</strong>
-            </p>
+            <a href="#projects" class="primary-btn">
+                View My Work
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+                Contact Me
+            </a>
+
         </div>
+
+        <div class="hero-links">
+
+            <a href="https://www.linkedin.com/in/samruddhi-khandekar-66a19627"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/sam0810-op"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="mailto:samukhandekar08@gmail.com">
+                Email
+            </a>
+
+            <a href="tel:+919922126366">
+                +91 9922126366
+            </a>
+
+        </div>
+
     </div>
-
-    <ul class="experience-list">
-        <li>
-            Developed an <strong>Employee Management System</strong> using Spring Boot to manage employee data efficiently.
-        </li>
-        <li>
-            Implemented CRUD operations for <strong>adding, updating, viewing, and deleting</strong> employee records.
-        </li>
-        <li>
-            Built RESTful APIs using <strong>Spring MVC</strong> for seamless frontend–backend communication.
-        </li>
-        <li>
-            Integrated <strong>Spring Data JPA</strong> with MySQL for database operations.
-        </li>
-        <li>
-            Applied layered architecture (Controller, Service, Repository) for clean and maintainable code.
-        </li>
-        <li>
-            Ensured basic validation and exception handling for reliable application performance.
-        </li>
-    </ul>
-
-    <p class="project-tech">
-        <strong>Tech Stack:</strong> Java, JavaScript, Spring Boot, Spring MVC, Spring Data JPA, MySQL, HTML, CSS
-    </p>
-
-    <!-- GitHub Button -->
-    <div class="project-links">
-        <a href="https://github.com/sam0810-op/EmployeeManagementSystem"
-           target="_blank"
-           class="github-btn">
-            View on GitHub
-        </a>
-    </div>
-</div>
 
 </section>
 
-<!-- Certifications -->
-<section id="certificates" class="section gray reveal">
-    <h2 class="section-title">Certifications</h2>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section about-section">
+
+    <div class="section-heading">
+
+        <span>ABOUT ME</span>
+
+        <h2>
+            Building ideas into <strong>real applications</strong>
+        </h2>
+
+        <p>
+            A passionate developer focused on creating modern web experiences.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-content">
+
+            <h3>
+                Hello! I'm Samruddhi 👋
+            </h3>
+
+            <p>
+                I am a passionate Full Stack Developer with a strong foundation
+                in Java, JavaScript and the MERN Stack. I enjoy developing
+                responsive and user-friendly applications that solve
+                real-world problems.
+            </p>
+
+            <p>
+                I have hands-on experience working with React, Node.js,
+                Express.js, Spring Boot, MySQL and MongoDB. My development
+                experience includes building RESTful APIs, implementing CRUD
+                operations, database integration and reusable UI components.
+            </p>
+
+            <p>
+                I enjoy learning new technologies, solving programming problems
+                and continuously improving my development skills through
+                practical projects and hands-on experience.
+            </p>
+
+        </div>
+
+
+        <div class="about-highlights">
+
+            <div class="highlight-card">
+                <div class="highlight-number">01</div>
+                <h3>Frontend Development</h3>
+                <p>
+                    Creating responsive and interactive interfaces using
+                    HTML, CSS, JavaScript and React.
+                </p>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-number">02</div>
+                <h3>Backend Development</h3>
+                <p>
+                    Building REST APIs and backend applications using
+                    Node.js, Express.js and Spring Boot.
+                </p>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-number">03</div>
+                <h3>Database Management</h3>
+                <p>
+                    Working with MySQL, SQL and MongoDB for efficient
+                    data storage and management.
+                </p>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-number">04</div>
+                <h3>Problem Solving</h3>
+                <p>
+                    Applying logical thinking and clean coding practices
+                    to solve real-world development challenges.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="section-heading">
+
+        <span>MY EXPERTISE</span>
+
+        <h2>
+            Technical <strong>Skills</strong>
+        </h2>
+
+        <p>
+            Technologies and tools I work with.
+        </p>
+
+    </div>
+
 
     <div class="skills-grid">
 
-        <div class="skill-box">
+        <!-- Languages -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">01</div>
+
+            <h3>Programming Languages</h3>
+
+            <div class="skill-tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>JavaScript</span>
+            </div>
+
+        </div>
+
+
+        <!-- Web -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">02</div>
+
+            <h3>Web Development</h3>
+
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>Spring Boot</span>
+            </div>
+
+        </div>
+
+
+        <!-- Database -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">03</div>
+
+            <h3>Databases</h3>
+
+            <div class="skill-tags">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>MySQL Workbench</span>
+            </div>
+
+        </div>
+
+
+        <!-- Tools -->
+
+        <div class="skill-card">
+
+            <div class="skill-icon">04</div>
+
+            <h3>Tools & Platforms</h3>
+
+            <div class="skill-tags">
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Eclipse</span>
+                <span>Tableau</span>
+                <span>Power BI</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="section experience-section">
+
+    <div class="section-heading">
+
+        <span>EXPERIENCE</span>
+
+        <h2>
+            Professional <strong>Experience</strong>
+        </h2>
+
+        <p>
+            My practical development experience.
+        </p>
+
+    </div>
+
+
+    <div class="experience-wrapper">
+
+        <div class="experience-date">
+            Dec 2025<br>
+            <span>Apr 2026</span>
+        </div>
+
+
+        <div class="experience-card">
+
+            <div class="experience-top">
+
+                <div>
+
+                    <h3>
+                        Web Developer Intern
+                    </h3>
+
+                    <h4>
+                        Athinnovations
+                    </h4>
+
+                </div>
+
+                <span class="experience-type">
+                    Internship
+                </span>
+
+            </div>
+
+
+            <p class="experience-summary">
+
+                Worked on real-world web applications with a focus on
+                responsive frontend development, reusable components and
+                API integration.
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Developed responsive web applications using
+                    HTML, CSS, JavaScript and React.
+                </li>
+
+                <li>
+                    Built reusable UI components to maintain a clean
+                    and scalable frontend architecture.
+                </li>
+
+                <li>
+                    Integrated frontend applications with backend APIs
+                    for dynamic data handling.
+                </li>
+
+                <li>
+                    Collaborated with team members while developing
+                    responsive full-stack applications.
+                </li>
+
+                <li>
+                    Focused on creating seamless and user-friendly
+                    experiences across different screen sizes.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="section-heading">
+
+        <span>MY WORK</span>
+
+        <h2>
+            Featured <strong>Projects</strong>
+        </h2>
+
+        <p>
+            A selection of applications I have designed and developed.
+        </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    MERN STACK
+                </span>
+
+                <h3>
+                    House Hunt
+                </h3>
+
+                <p>
+                    A full-stack house rental application that connects
+                    property owners and renters through a role-based
+                    platform.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Implemented Owner and Renter roles.
+                    </li>
+
+                    <li>
+                        Added property listing and management features.
+                    </li>
+
+                    <li>
+                        Implemented authentication and protected routes.
+                    </li>
+
+                    <li>
+                        Integrated REST APIs with the frontend.
+                    </li>
+
+                </ul>
+
+
+                <div class="tech-stack">
+
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/sam0810-op/househaunt-app"
+                    target="_blank"
+                    class="project-btn">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    JAVA / SPRING BOOT
+                </span>
+
+                <h3>
+                    Employee Management System
+                </h3>
+
+                <p>
+                    A web application developed to efficiently manage
+                    employee records with complete CRUD functionality.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Implemented Create, Read, Update and Delete operations.
+                    </li>
+
+                    <li>
+                        Developed RESTful APIs using Spring MVC.
+                    </li>
+
+                    <li>
+                        Integrated Spring Data JPA with MySQL.
+                    </li>
+
+                    <li>
+                        Followed Controller, Service and Repository architecture.
+                    </li>
+
+                </ul>
+
+
+                <div class="tech-stack">
+
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring MVC</span>
+                    <span>JPA</span>
+                    <span>MySQL</span>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/sam0810-op/EmployeeManagementSystem"
+                    target="_blank"
+                    class="project-btn">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section education-section">
+
+    <div class="section-heading">
+
+        <span>EDUCATION</span>
+
+        <h2>
+            Academic <strong>Background</strong>
+        </h2>
+
+        <p>
+            My educational journey.
+        </p>
+
+    </div>
+
+
+    <div class="education-grid">
+
+
+        <div class="education-card">
+
+            <div class="education-year">
+                2022 — 2026
+            </div>
+
+            <div>
+
+                <h3>
+                    B.Tech Computer Science Engineering
+                </h3>
+
+                <h4>
+                    Dr. D.Y. Patil Technical Campus
+                </h4>
+
+                <p>
+                    Talegaon, Pune
+                </p>
+
+                <div class="education-score">
+                    CGPA: <strong>8.24</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div class="education-year">
+                2020 — 2022
+            </div>
+
+            <div>
+
+                <h3>
+                    HSC – Information Technology
+                </h3>
+
+                <h4>
+                    Alard college of science and technology
+                </h4>
+                <p>
+                    Pune , Maharashtra
+                </p>
+
+                <div class="education-score">
+                    Percentage: <strong>62.67%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div class="education-year">
+                2019 — 2020
+            </div>
+
+            <div>
+
+                <h3>
+                    SSC
+                </h3>
+
+                <h4>
+                   BSEM School
+                </h4>
+                
+                <p>
+                    Pune , Maharashtra
+                </p>
+
+                <div class="education-score">
+                    Percentage: <strong>75.5%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRAINING ================= -->
+
+<section id="training" class="section training-section">
+
+    <div class="section-heading">
+
+        <span>PROFESSIONAL DEVELOPMENT</span>
+
+        <h2>
+            Training & <strong>Internships</strong>
+        </h2>
+
+        <p>
+            Additional learning and practical experience.
+        </p>
+
+    </div>
+
+
+    <div class="training-grid">
+
+
+        <div class="training-card">
+
+            <span class="training-number">
+                01
+            </span>
+
             <h3>
-                <a href="smartbridge-certificate.png" target="_blank" class="cert-link">
+                Java Full Stack Development Training
+            </h3>
+
+            <h4>
+                ExcelR
+            </h4>
+
+            <p>
+                Completed professional training focused on Java,
+                Spring Boot, web development, database management,
+                REST APIs and full-stack application development.
+            </p>
+
+            <div class="training-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>SQL</span>
+                <span>Web Development</span>
+            </div>
+
+        </div>
+
+
+        <div class="training-card">
+
+            <span class="training-number">
+                02
+            </span>
+
+            <h3>
+                Java Full Stack Development Internship
+            </h3>
+
+            <h4>
+                Aivariant
+            </h4>
+
+            <p>
+                Gained practical exposure to full-stack Java development,
+                backend programming, database integration and application
+                development.
+            </p>
+
+            <div class="training-tags">
+                <span>Java</span>
+                <span>Spring</span>
+                <span>SQL</span>
+                <span>Full Stack</span>
+            </div>
+
+        </div>
+
+
+        <div class="training-card">
+
+            <span class="training-number">
+                03
+            </span>
+
+            <h3>
+                MERN Full Stack Web Development Internship
+            </h3>
+
+            <h4>
+                SmartBridge
+            </h4>
+
+            <p>
+                Gained hands-on experience in MERN stack development,
+                including React frontend development, Node.js,
+                Express.js APIs and MongoDB.
+            </p>
+
+            <div class="training-tags">
+                <span>MongoDB</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>Node.js</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certificates" class="section certificates-section">
+
+    <div class="section-heading">
+
+        <span>CERTIFICATIONS</span>
+
+        <h2>
+            Certifications & <strong>Achievements</strong>
+        </h2>
+
+        <p>
+            Certifications that reflect my continuous learning.
+        </p>
+
+    </div>
+
+
+    <div class="certificates-grid">
+
+
+        <!-- Certificate 1 -->
+
+        <div class="certificate-card">
+
+            <div class="certificate-icon">
+                C
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    PROGRAMMING
+                </span>
+
+                <h3>
+                    C Programming Certificate
+                </h3>
+
+                <p>
+                    Certification demonstrating knowledge of C programming,
+                    programming fundamentals, control structures,
+                    functions and problem-solving.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Certificate 2 -->
+
+        <div class="certificate-card">
+
+            <div class="certificate-icon">
+                C++
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    PROGRAMMING
+                </span>
+
+                <h3>
+                    C++ Programming Certificate
+                </h3>
+
+                <p>
+                    Certification covering C++ programming fundamentals,
+                    object-oriented programming concepts and
+                    problem-solving techniques.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Certificate 3 -->
+
+        <div class="certificate-card">
+
+            <div class="certificate-icon">
+                T
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    DATA & VISUALIZATION
+                </span>
+
+                <h3>
+                    Tableau Certificate
+                </h3>
+
+                <p>
+                    Certification demonstrating knowledge of data
+                    visualization, dashboards and presenting insights
+                    using Tableau.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Certificate 4 -->
+
+        <div class="certificate-card clickable">
+
+            <div class="certificate-icon">
+                M
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    INTERNSHIP
+                </span>
+
+                <h3>
                     SmartBridge Internship
+                </h3>
+
+                <p>
+                    MERN Full Stack Web Development Internship with
+                    practical exposure to modern web application
+                    development.
+                </p>
+
+                <a href="smartbridge-certificate.png"
+                   target="_blank">
+                    View Certificate →
                 </a>
-            </h3>
-            <p>MERN Full Stack Web Development Internship</p>
+
+            </div>
+
         </div>
 
-        <div class="skill-box">
-            <h3>
-                <a href="excelr-certificate.png" target="_blank" class="cert-link">
+
+        <!-- Certificate 5 -->
+
+        <div class="certificate-card clickable">
+
+            <div class="certificate-icon">
+                J
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    TRAINING
+                </span>
+
+                <h3>
                     ExcelR Course Completion
+                </h3>
+
+                <p>
+                    Java Full Stack Development Training covering
+                    Java, Spring Boot, databases and web development.
+                </p>
+
+                <a href="excelr-certificate.png"
+                   target="_blank">
+                    View Certificate →
                 </a>
-            </h3>
-            <p>Java Full Stack Development Training</p>
+
+            </div>
+
         </div>
 
-        <div class="skill-box">
-            <h3>
-                <a href="aivariant-certificate.png" target="_blank" class="cert-link">
-                   Aivariant Internship 
+
+        <!-- Certificate 6 -->
+
+        <div class="certificate-card clickable">
+
+            <div class="certificate-icon">
+                J
+            </div>
+
+            <div>
+
+                <span class="certificate-type">
+                    INTERNSHIP
+                </span>
+
+                <h3>
+                    Aivariant Internship
+                </h3>
+
+                <p>
+                    Java Full Stack Development Internship focused on
+                    practical software development and backend technologies.
+                </p>
+
+                <a href="aivariant-certificate.png"
+                   target="_blank">
+                    View Certificate →
                 </a>
-            </h3>
-            <p>Java Full Stack Development Internship</p>
+
+            </div>
+
         </div>
 
     </div>
+
 </section>
 
-<section id="journey" class="section">
-  <h2 class="section-title underline-loop">My Journey</h2>
 
-  <div class="timeline">
+<!-- ================= JOURNEY ================= -->
 
-    <div class="timeline-item">
-      <div class="timeline-year">2022</div>
-      <div class="timeline-content">
-        Started <b>B.Tech in Computer Science</b>
-      </div>
+<section id="journey" class="section journey-section">
+
+    <div class="section-heading">
+
+        <span>MY JOURNEY</span>
+
+        <h2>
+            From Learning to <strong>Building</strong>
+        </h2>
+
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content">
-        Learned <b>C, C++, Java, HTML, CSS, and JavaScript</b>
-      </div>
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2022
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Started B.Tech
+                </h3>
+
+                <p>
+                    Began my B.Tech journey in Computer Science
+                    Engineering and developed an interest in software
+                    development.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2023
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Programming Foundations
+                </h3>
+
+                <p>
+                    Built a strong foundation in C, C++, Java,
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2024
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Full Stack Development
+                </h3>
+
+                <p>
+                    Completed Java Full Stack Development Training
+                    at ExcelR and developed the Employee Management
+                    System.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2025
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Internship Experience
+                </h3>
+
+                <p>
+                    Completed MERN Full Stack Internship at SmartBridge
+                    and Java Full Stack Internship at Aivariant.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-year">
+                2026
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Web Development Experience
+                </h3>
+
+                <p>
+                    Gained professional experience as a Web Developer
+                    Intern at Athinnovations while completing my
+                    B.Tech in Computer Science.
+                </p>
+
+            </div>
+
+        </div>
+
+
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-year">2024</div>
-      <div class="timeline-content">
-        Completed <b>Java Full Stack Development Training</b> at ExcelR and built projects like <b>Employee Management System</b>.
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content">
-        Completed <b>SmartBridge MERN <br> Internship</b> and <b>Aivariant Java Full Stack Internship</b>.
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-year">2026</div>
-      <div class="timeline-content">
-        Working as <b>Web Developer Intern at AthInnovations</b> and building real-world web applications.
-      </div>
-    </div>
-
-   
 </section>
 
-<!-- Footer -->
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-content">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>
+            Let's build something <strong>great together.</strong>
+        </h2>
+
+        <p>
+            I'm always open to discussing new opportunities,
+            projects and interesting ideas.
+        </p>
+
+
+        <div class="contact-grid">
+
+            <a href="mailto:samukhandekar08@gmail.com"
+               class="contact-card">
+
+                <span>Email</span>
+
+                <strong>
+                    samukhandekar08@gmail.com
+                </strong>
+
+            </a>
+
+
+            <a href="tel:+919922126366"
+               class="contact-card">
+
+                <span>Phone</span>
+
+                <strong>
+                    +91 9922126366
+                </strong>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/samruddhi-khandekar-66a19627"
+               target="_blank"
+               class="contact-card">
+
+                <span>LinkedIn</span>
+
+                <strong>
+                    Connect with me
+                </strong>
+
+            </a>
+
+
+            <a href="https://github.com/sam0810-op"
+               target="_blank"
+               class="contact-card">
+
+                <span>GitHub</span>
+
+                <strong>
+                    View my repositories
+                </strong>
+
+            </a>
+
+        </div>
+
+
+        <a href="mailto:samukhandekar08@gmail.com"
+           class="primary-btn contact-btn">
+
+            Say Hello →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <p>© 2026 Samruddhi Khandekar | Web Developer Intern</p>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                Samruddhi S Khandekar<span>.</span>
+            </h3>
+
+            <p>
+                Full Stack Developer
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Samruddhi S. Khandekar. All Rights Reserved.
+        </p>
+
+    </div>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
